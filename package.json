@@ -5,7 +5,12 @@
   "main": "index.js",
   "packageManager": "pnpm@8.15.8",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:pr": "nx affected --targets=test",
+    "test:build": "nx affected --target=test:build",
+    "test:types": "nx affected --target=test:types",
+    "test:eslint": "nx affected --target=test:eslint",
+    "test:format": "pnpm run prettier --check"
   },
   "keywords": [],
   "author": "",

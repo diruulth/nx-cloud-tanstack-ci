@@ -24,5 +24,16 @@
       },
       "exclude": ["apps/helloworld-e2e/**/*"]
     }
-  ]
+  ],
+  "release": {
+    "projects": ["tag:app"],
+    "version": {
+      "conventionalCommits": true
+    },
+    "changelog": {
+      "workspaceChangelog": {
+        "createRelease": "github"
+      }
+    }
+  }
 }
