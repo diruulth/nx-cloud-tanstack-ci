@@ -1,0 +1,24 @@
+{
+  "name": "helloworld",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/helloworld/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "helloworld:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "helloworld:build:development"
+        },
+        "production": {
+          "buildTarget": "helloworld:build:production"
+        }
+      }
+    }
+  }
+}
