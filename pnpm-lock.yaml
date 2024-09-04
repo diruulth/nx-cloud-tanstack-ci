@@ -133,6 +133,8 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(webpack@5.94.0)
 
+  apps/helloworld: {}
+
 packages:
 
   /@adobe/css-tools@4.4.0:
